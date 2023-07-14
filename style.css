@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(48, 53, 58);
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+input, button{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input, button, ul{
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+input{
+    padding: 0 6px;
+}
+
+button{
+    cursor: pointer;
+    background: rgb(98, 208, 255);
+    border: 2px solid rgb(98, 208, 255);
+    transition: .2s;
+}
+button:hover{
+    border: 2px solid rgb(98, 208, 255);
+    color: rgb(98, 208, 255);
+    background: none;
+    transition: .2s;
+}
+
+ul{
+    background: white;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.85);
+}
+
+li span:first-child{
+    width: 80%;
+    word-wrap: break-word;
+}
+
+li span:nth-child(2){
+    display: flex;
+}
+
+#check, #delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#check{
+    background-color: rgb(45, 148, 45);
+    margin-right: 5px;
+}
+
+#delete{
+    background-color: rgb(165, 46, 46);
+}
