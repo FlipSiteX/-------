@@ -90,10 +90,30 @@ li span:nth-child(2){
 }
 
 #check{
-    background-color: rgb(45, 148, 45);
     margin-right: 5px;
 }
 
 #delete{
     background-color: rgb(165, 46, 46);
+}
+#delete:hover{
+    background-color: rgb(151, 28, 28);
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.not-done-check{
+    background-color: rgb(45, 148, 45);
+}
+.not-done-check:hover{
+    background-color: rgb(42, 129, 42);
+}
+
+.done{
+    background-color: darkorange;
+}
+.done:hover{
+    background-color: rgb(226, 139, 0);
 }
