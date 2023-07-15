@@ -28,16 +28,20 @@ function getNoteTemplate (note, index) {
      `
 }
 
-addBtn.onclick = function () {
-    if (inpElement.value === '') {
+function addNewNote (value) {
+    if (value === '') {
         return 
     }
     const newNote = {
-        title: inpElement.value,
+        title: value,
         completed: false
     }
     notes.push(newNote)
     render()
+}
+
+addBtn.onclick = function () {
+    addNewNote(inpElement.value)
     inpElement.value = ''
 }
 
@@ -52,5 +56,12 @@ listElement.onclick = function (event) {
             notes.splice(index, 1)
         }
         render()
+    }
+}
+
+document.onkeydown = function (e) {
+    if (e.key === 'Enter') {
+        addNewNote(inpElement.value)
+        inpElement.value = ''
     }
 }
