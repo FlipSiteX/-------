@@ -79,9 +79,8 @@ li span:nth-child(2){
 }
 
 #check, #delete{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     height: 30px;
     width: 30px;
     border-radius: 5px;
@@ -104,10 +103,10 @@ li span:nth-child(2){
     text-decoration: line-through;
 }
 
-.not-done-check{
+.not-done{
     background-color: rgb(45, 148, 45);
 }
-.not-done-check:hover{
+.not-done:hover{
     background-color: rgb(42, 129, 42);
 }
 
