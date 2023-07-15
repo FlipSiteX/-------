@@ -116,3 +116,9 @@ li span:nth-child(2){
 .done:hover{
     background-color: rgb(226, 139, 0);
 }
+
+@media (max-width: 420px) {
+    .container{
+        width: 375px;
+    }
+}
